@@ -1,6 +1,6 @@
 # Mailvoidr Laravel SDK
 
-Official Laravel client for the [Mailvoidr](https://mailvoidr.com) transactional email API.
+Official Laravel client for the [Mailvoidr](https://mailvoidr.com) transactional email API. Supports Laravel 10–13.
 
 Use this when SMTP port `587` is unavailable — the HTTP API delivers the same way.
 
