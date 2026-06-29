@@ -19,15 +19,7 @@ MAIL_MAILER=mailvoidr
 MAILVOIDR_API_KEY=mvdr_live_your_key_here
 ```
 
-Add a mailer in `config/mail.php`:
-
-```php
-'mailvoidr' => [
-    'transport' => 'mailvoidr',
-],
-```
-
-That's it — `Mail::`, Mailables, and Notifications all route through Mailvoidr.
+That's it — `Mail::`, Mailables, and Notifications all route through Mailvoidr. No `config/mail.php` changes needed.
 
 ## Laravel Mail (recommended)
 

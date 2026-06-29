@@ -26,6 +26,12 @@ class MailvoidrServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        config([
+            'mail.mailers.mailvoidr' => [
+                'transport' => 'mailvoidr',
+            ],
+        ]);
+
         Mail::extend('mailvoidr', function () {
             return new MailvoidrTransport($this->app->make(MailvoidrClient::class));
         });
