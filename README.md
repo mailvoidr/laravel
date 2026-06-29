@@ -19,7 +19,7 @@ MAIL_MAILER=mailvoidr
 MAILVOIDR_API_KEY=mvdr_live_your_key_here
 ```
 
-That's it — `Mail::`, Mailables, and Notifications all route through Mailvoidr. No `config/mail.php` changes needed.
+That's it — `Mail::`, Mailables, and Notifications all route through Mailvoidr.
 
 ## Laravel Mail (recommended)
 
