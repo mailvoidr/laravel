@@ -1,0 +1,28 @@
+{
+    "name": "mailvoidr/laravel",
+    "description": "Official Laravel SDK for the Mailvoidr transactional email API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/mail": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mailvoidr\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mailvoidr\\Laravel\\MailvoidrServiceProvider"
+            ],
+            "aliases": {
+                "Mailvoidr": "Mailvoidr\\Laravel\\Facades\\Mailvoidr"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
